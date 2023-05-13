@@ -4,7 +4,6 @@
 
 :root {
   font-weight: 400;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -57,11 +56,4 @@ body[data-theme='light'] {
 }
 .hide-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
-}
-
-.quote::before {
-  content: '“';
-}
-.quote::after {
-  content: '”';
 }
