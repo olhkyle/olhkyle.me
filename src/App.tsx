@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
 import { Layout } from './components';
-import { Home, Login, Register, Resume } from './pages';
+import { AboutMe, Blog, Home, Login, NotFound, Register, Resume } from './pages';
 
 const router = createBrowserRouter([
   {
@@ -21,8 +21,20 @@ const router = createBrowserRouter([
         element: <Login />,
       },
       {
+        path: '/about',
+        element: <AboutMe />,
+      },
+      {
+        path: '/blog',
+        element: <Blog />,
+      },
+      {
         path: '/resume',
         element: <Resume />,
+      },
+      {
+        path: '*',
+        element: <NotFound />,
       },
     ],
   },
