@@ -39,7 +39,7 @@ export default {
         dark: 'var(--color-dark)',
       },
       fontFamily: {
-        sans: ['Poppins', 'sans-serif', ...defaultTheme.fontFamily.sans],
+        sans: ['Neogrotesk', 'sans-serif', ...defaultTheme.fontFamily.sans],
       },
     },
   },
