@@ -1,11 +1,12 @@
 import React from 'react';
 
 type ToggleTheme = () => void;
+type Theme = 'dark' | 'light';
 
 const THEME = 'theme';
 
 const useTheme = () => {
-  const initializeTheme: () => string = () =>
+  const initializeTheme: () => Theme | string = () =>
     localStorage.getItem(THEME) ?? (window.matchMedia('(prefers-color-scheme: dark)') ? 'dark' : 'light');
 
   const [theme, setTheme] = React.useState(initializeTheme);

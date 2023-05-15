@@ -6,10 +6,15 @@ import { AiOutlineGithub, AiOutlineLink } from 'react-icons/ai';
 import { MdArrowRight } from 'react-icons/md';
 import useSideNavActive from '../../hooks/useSideNavActive';
 import { NavLink, SocialBadge } from '.';
+import links from '../../constants/links';
 
-const links = ['About', 'Blog', 'Resume'];
+interface SocialLink {
+  name: string;
+  href: string;
+  icon: React.ReactElement;
+}
 
-const socialLinks = [
+const socialLinks: SocialLink[] = [
   { name: 'github', href: 'https://github.com/olhkyle', icon: <AiOutlineGithub size="24" /> },
   {
     name: 'linkedin',
@@ -29,8 +34,8 @@ const Nav = () => {
         isActive ? 'translate-x-72' : 'translate-x-0'
       } duration-500 z-20 dark:bg-dark`}>
       <div className="flex justify-between items-center w-full h-14 border-b-[1px]">
-        <h1 className="ml-4 text-center font-semibold text-lg cursor-pointer">
-          <Link to="/" className="py-1 px-2 hover:underline underline-offset-4">
+        <h1 className="ml-4 text-center font-semibold text-xl cursor-pointer">
+          <Link to="/" className="py-1 px-2">
             💿 OLHKYLE
           </Link>
         </h1>
@@ -72,7 +77,7 @@ const Nav = () => {
         </div>
         <div
           className={`flex justify-center items-center ml-auto pl-10 m w-[60px] h-screen -rotate-90 font-bold text-xl`}>
-          {!isActive && (pathname === '/' ? 'HOME' : pathname.slice(1).toUpperCase())}
+          {!isActive && (pathname === '/' ? 'Home' : pathname.slice(1)[0].toUpperCase() + pathname.slice(2))}
         </div>
       </div>
     </nav>

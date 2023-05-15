@@ -3,4 +3,7 @@ export { default as ThemeButton } from './ThemeButton';
 export { default as ScrollToTopButton } from './ScrollToTopButton';
 export { default as NavLink } from './NavLink';
 export { default as SocialBadge } from './SocialBadge';
-export { default as Title } from './Title';
+export { default as MainTitle } from './MainTitle';
+export { default as LanguageSelect } from './LanguageSelect';
+export { default as Divider } from './Divider';
+export { default as RedirectButton } from './RedirectButton';
