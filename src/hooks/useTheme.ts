@@ -1,24 +1,23 @@
 import React from 'react';
 
 type ToggleTheme = () => void;
-type Theme = 'dark' | 'light';
 
 const THEME = 'theme';
 
 const useTheme = () => {
-  const initializeTheme: () => Theme | string = () =>
-    localStorage.getItem(THEME) ?? (window.matchMedia('(prefers-color-scheme: dark)') ? 'dark' : 'light');
+	const initializeTheme: () => Theme | string = () =>
+		localStorage.getItem(THEME) ?? (window.matchMedia('(prefers-color-scheme: dark)') ? 'dark' : 'light');
 
-  const [theme, setTheme] = React.useState(initializeTheme);
+	const [theme, setTheme] = React.useState(initializeTheme);
 
-  React.useEffect(() => {
-    document.body.dataset.theme = theme;
-    localStorage.setItem(THEME, theme);
-  }, [theme]);
+	React.useEffect(() => {
+		document.body.dataset.theme = theme;
+		localStorage.setItem(THEME, theme);
+	}, [theme]);
 
-  const toggleTheme = () => setTheme(theme => (theme === 'light' ? 'dark' : 'light'));
+	const toggleTheme = () => setTheme(theme => (theme === 'light' ? 'dark' : 'light'));
 
-  return [theme, toggleTheme];
+	return [theme, toggleTheme];
 };
 
 export type { ToggleTheme };
