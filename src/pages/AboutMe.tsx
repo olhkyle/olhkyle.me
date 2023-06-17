@@ -1,4 +1,5 @@
 import React from 'react';
+import Recoil from 'recoil';
 import {
 	Cover,
 	LanguageSelect,
@@ -9,9 +10,10 @@ import {
 	LanguagesCard,
 	ExperienceCard,
 } from '../components';
+import currentLangState from '../recoil/atom/currentLang';
 
 const AboutMe = () => {
-	const [currentLang, setCurrentLang] = React.useState<Lang>('ENG');
+	const [currentLang, setCurrentLang] = Recoil.useRecoilState(currentLangState);
 
 	return (
 		<>
