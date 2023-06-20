@@ -22,7 +22,7 @@ const AboutMe = () => {
 					<MainTitle>About Me.</MainTitle>
 					<LanguageSelect currentLang={currentLang} setCurrentLang={setCurrentLang} />
 				</div>
-				<div className="flex justify-center items-center p-4 w-64 border-[1px] border-dark dark:border-gray-800 rounded-full">
+				<div className="hidden justify-center items-center p-4 w-64 border-[1px] border-dark dark:border-gray-600 rounded-full lg:flex">
 					<img src="./own-furnitures.png" alt="furnitures" className="block w-full h-full bg-transparent`" />
 				</div>
 			</div>

@@ -30,7 +30,7 @@
 	--color-green-300: #15c47e;
 	--color-green-400: #03b26c;
 
-	--color-blue-100: #36a3ff;
+	--color-blue-100: #0687f0;
 	--color-blue-200: #2272eb;
 
 	--color-purple: #6466f1;
@@ -40,6 +40,11 @@
 
 	--color-red: #ff4545;
 	--color-dark: #090b16;
+}
+
+html {
+	width: 100%;
+	height: 100%;
 }
 
 body[data-theme='dark'] {

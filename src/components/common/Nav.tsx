@@ -7,6 +7,7 @@ import { MdArrowRight } from 'react-icons/md';
 import useSideNavActive from '../../hooks/useSideNavActive';
 import { NavLink, SocialBadge } from '.';
 import links from '../../constants/links';
+import { GITHUB, GMAIL, LINKEDIN, VELOG } from '../../constants/url';
 
 interface SocialLink {
 	name: string;
@@ -15,13 +16,13 @@ interface SocialLink {
 }
 
 const socialLinks: SocialLink[] = [
-	{ name: 'github', href: 'https://github.com/olhkyle', icon: <AiOutlineGithub size="24" /> },
+	{ name: 'github', href: GITHUB, icon: <AiOutlineGithub size="24" /> },
 	{
 		name: 'linkedin',
-		href: 'https://www.linkedin.com/in/hyukmin-kwon/',
+		href: LINKEDIN,
 		icon: <FiLinkedin size="24" />,
 	},
-	{ name: 'blog', href: 'https://velog.io/@defaultkyle/series', icon: <AiOutlineLink size="24" /> },
+	{ name: 'blog', href: VELOG, icon: <AiOutlineLink size="24" /> },
 ];
 
 const Nav = () => {
@@ -34,32 +35,32 @@ const Nav = () => {
 				isActive ? 'translate-x-72' : 'translate-x-0'
 			} duration-500 z-20 dark:bg-dark`}>
 			<div className="flex justify-between items-center w-full h-14 border-b-[1px]">
-				<h1 className="ml-4 text-center font-semibold text-xl cursor-pointer">
+				<h1 className="ml-4 text-center font-semibold text-2xl cursor-pointer">
 					<Link to="/" className="py-1 px-2">
-						💿 OLHKYLE
+						💿 LHKYLE
 					</Link>
 				</h1>
 				<button className={`p-4`} onClick={toggleActive}>
 					{isActive ? <FiArrowLeft size="27" /> : <RxHamburgerMenu size="27" />}
 				</button>
 			</div>
-			<div className="flex">
+			<div className="flex h-full">
 				<div className="flex flex-col w-full justify-between">
-					<ul className="flex flex-col gap-2 p-5 w-full">
+					<ul className="flex flex-col gap-2 p-5 w-[80%] sm:w-full">
 						{links.map((link, idx) => (
 							<li key={idx}>
 								<NavLink link={link} currentPath={pathname.slice(1)} />
 							</li>
 						))}
 					</ul>
-					<div className="mb-[50px] p-5 ">
+					<div className="mb-[50px] p-5">
 						<div className="mb-2" onClick={() => {}}>
 							<h2 className="font-bold">Hyukmin Kwon (Kyle)</h2>
 						</div>
 						<div className="mb-6">
 							<p className="flex items-center">
 								<MdArrowRight size="18" />
-								<span>kylekwon.dev@gmail.com</span>
+								<span>{GMAIL}</span>
 							</p>
 							<p className="flex items-center">
 								<MdArrowRight size="18" />
@@ -76,7 +77,7 @@ const Nav = () => {
 					</div>
 				</div>
 				<div
-					className={`flex justify-center items-center ml-auto pl-10 m w-[60px] h-screen -rotate-90 font-bold text-xl`}>
+					className={`hidden justify-center items-center ml-auto pl-10 w-[60px] h-full -rotate-90 font-bold text-xl sm:flex`}>
 					{!isActive && (pathname === '/' ? 'Home' : pathname.slice(1)[0].toUpperCase() + pathname.slice(2))}
 				</div>
 			</div>

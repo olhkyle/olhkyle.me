@@ -7,3 +7,6 @@ export { default as MainTitle } from './MainTitle';
 export { default as LanguageSelect } from './LanguageSelect';
 export { default as Divider } from './Divider';
 export { default as RedirectButton } from './RedirectButton';
+export { default as HighlightText } from './HighlightText';
+export { default as Spacer } from './Spacer';
+export { default as SemiColonText } from './SemiColonText';

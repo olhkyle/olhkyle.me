@@ -9,13 +9,13 @@ const langs: Lang[] = ['ENG', 'KOR'];
 
 const LanguageSelect = ({ currentLang, setCurrentLang }: LanguageSelectProps) => {
 	return (
-		<ul className="flex gap-2 h-[42px] mt-5">
+		<ul className="flex gap-2 py-5 sm:py-10">
 			{langs.map((lang, idx) => (
 				<li
 					key={idx}
 					className={`${
 						currentLang === lang ? 'font-bold toggle-dark' : 'font-normal'
-					} px-4 py-2 rounded-lg cursor-pointer border-[1px] dark:border-gray-200`}
+					} px-2 py-1 rounded-lg cursor-pointer border-[1px] dark:border-gray-200 sm:px-4 sm:py-2`}
 					onClick={() => setCurrentLang(lang as Lang)}>
 					{lang}
 				</li>
