@@ -1,6 +1,6 @@
 import React from 'react';
 import { CardTitle } from '.';
-import { HighlightText, SemiColonText } from '../common';
+import { HighlightText } from '../common';
 
 interface Skill {
 	category: string;

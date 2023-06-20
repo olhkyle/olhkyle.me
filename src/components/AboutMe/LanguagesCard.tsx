@@ -1,6 +1,5 @@
 import React from 'react';
 import { CardTitle } from '.';
-import { SemiColonText } from '../common';
 
 interface LanguagesCardProps {
 	currentLang: Lang;

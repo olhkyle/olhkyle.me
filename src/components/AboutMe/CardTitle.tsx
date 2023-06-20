@@ -1,5 +1,5 @@
 import React from 'react';
-import { SemiColonText } from '../common';
+import { EmphasisCircle } from '../common';
 
 interface CardTitleProps {
 	children: React.ReactNode;
@@ -8,7 +8,7 @@ interface CardTitleProps {
 const CardTitle = ({ children }: CardTitleProps) => {
 	return (
 		<h2 className="mt-14 text-2xl font-semibold">
-			{children} <SemiColonText />
+			{children} <EmphasisCircle />
 		</h2>
 	);
 };

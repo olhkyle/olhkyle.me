@@ -1,5 +1,5 @@
 import React from 'react';
-import { SemiColonText } from '../common';
+import { EmphasisCircle } from '../common';
 
 interface SubTitleProps {
 	children: React.ReactNode;
@@ -8,7 +8,7 @@ interface SubTitleProps {
 const SubTitle = ({ children }: SubTitleProps) => {
 	return (
 		<h2 className="mt-5 text-4xl font-bold">
-			{children} <SemiColonText />
+			{children} <EmphasisCircle />
 		</h2>
 	);
 };
