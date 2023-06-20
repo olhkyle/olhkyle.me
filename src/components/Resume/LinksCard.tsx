@@ -6,7 +6,7 @@ const SLICE_INDEX_OF_STRING = 8;
 
 const LinksCard = () => {
 	return (
-		<div className="col-span-1">
+		<div className="col-span-1 mt-10">
 			<DoubleSubTitle>Links</DoubleSubTitle>
 			<ul>
 				<li className="underline underline-offset-4 decoration-blue-200 hover:text-blue-200 cursor-pointer">

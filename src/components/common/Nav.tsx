@@ -86,7 +86,7 @@ const Nav = () => {
 			</nav>
 			{isActive ? (
 				<div
-					className="fixed top-0 right-0 left-0 bottom-0 bg-dark opacity-70 z-10 sm:hidden"
+					className="fixed top-0 right-0 left-0 bottom-0 backdrop-blur-sm z-10 sm:hidden"
 					onClick={toggleActive}></div>
 			) : null}
 		</>

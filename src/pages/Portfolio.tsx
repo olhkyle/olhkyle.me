@@ -8,7 +8,7 @@ const Portfolio = () => {
 
 	return (
 		<>
-			<div className="flex justify-between gap-10">
+			<div className="flex flex-col justify-between sm:flex-row sm:gap-10">
 				<MainTitle>Portfolio.</MainTitle>
 				<LanguageSelect currentLang={currentLang} setCurrentLang={setCurrentLang} />
 			</div>
