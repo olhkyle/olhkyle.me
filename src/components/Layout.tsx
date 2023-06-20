@@ -16,7 +16,6 @@ const Layout = () => {
 				<Outlet />
 			</main>
 			<ScrollToTopButton topPosToStopShowing={300} />
-			<ThemeButton />
 		</div>
 	);
 };

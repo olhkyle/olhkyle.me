@@ -10,7 +10,7 @@ const ThemeButton = () => {
 	return (
 		<button
 			className={clsx(
-				`fixed top-5 right-5 p-2 rounded-lg border-[1px] border-gray-200 bg-white dark:bg-dark z-50`,
+				`absolute bottom-[77px] right-2.5 p-2 rounded-lg border-[1px] border-gray-200 bg-white dark:bg-dark z-50`,
 				{ 'hover:bg-gray-100': theme === 'light' },
 				{ 'hover:bg-gray-900': theme === 'dark' },
 			)}
