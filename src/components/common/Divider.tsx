@@ -1,5 +1,11 @@
 import React from 'react';
 
-const Divider = () => <div className="h-[0.5px] mt-8 bg-gray-400 dark:bg-gray-600"></div>;
+interface DividerProps {
+	marginTop?: string;
+}
+
+const Divider = ({ marginTop = 'mt-8' }: DividerProps) => (
+	<div className={`h-[0.5px] ${marginTop} bg-gray-300 dark:bg-gray-600`}></div>
+);
 
 export default Divider;
