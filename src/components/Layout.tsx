@@ -10,7 +10,7 @@ const Layout = () => {
 		<div className="flex">
 			<Nav />
 			<main
-				className={`mx-auto my-[5rem] px-[1rem] h-full transition-transform ${
+				className={`mx-auto my-[4rem] px-[1rem] h-full transition-transform ${
 					isActive ? 'translate-x-[360px]' : 'translate-x-[62px]'
 				} duration-500 lg:w-[1024px] md:w-[720px] sm:max-w-3xl md:max-w-4xl lg:max-w-6xl `}>
 				<Outlet />
