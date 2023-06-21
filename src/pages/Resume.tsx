@@ -1,6 +1,6 @@
 import React from 'react';
 import Recoil from 'recoil';
-import { Divider, HighlightText, LanguageSelect, MainTitle, StyledBullet } from '../components';
+import { Divider, HighlightText, LanguageSelect, MainTitle } from '../components';
 import currentLangState from '../recoil/atom/currentLang';
 import { ContactCard, DoubleSubTitle, LinksCard, ProjectTitle, SubTitle, ThirdSubTitle } from '../components/Resume';
 import Overview from '../components/Resume/Overview';
