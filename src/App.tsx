@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
 import { Layout } from './components';
 import { AboutMe, Portfolio, Home, Login, NotFound, Register, Resume } from './pages';
+import useScreenHeightResize from './hooks/useScreenHeightResize';
 
 const router = createBrowserRouter([
 	{
@@ -41,12 +42,7 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-	const setScreenSize = () => {
-		let vh = window.innerHeight * 0.01;
-		document.documentElement.style.setProperty('--vh', `${vh}px`);
-	};
-
-	window.addEventListener('resize', setScreenSize);
+	useScreenHeightResize();
 
 	return (
 		<RecoilRoot>
