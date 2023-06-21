@@ -16,7 +16,7 @@ const SideNav = ({ isActive, toggleActive }: SideNavProps) => {
 
 	return (
 		<div
-			className={`fixed right-0 top-0 w-[280px] border-l-[1px] border-r-gray-900 bg-white h-screen transition-transform ${
+			className={`fixed right-0 top-0 w-[280px] border-l-[1px] border-r-gray-900 bg-white h-screen h-[calc(var(--vh) * 100)] transition-transform ${
 				isActive ? 'translate-x-0' : 'translate-x-[280px]'
 			} duration-500 z-50 dark:bg-dark sm:hidden`}>
 			<div className="flex justify-between items-center w-full h-[80px] border-b-[1px]">
