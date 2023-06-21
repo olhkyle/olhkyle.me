@@ -15,7 +15,7 @@ const Nav = () => {
 	return (
 		<>
 			<nav className="sticky top-0 px-[1rem] h-[80px] bg-white dark:bg-dark ">
-				<div className="flex justify-between mx-auto md:w-[768px] lg:w-[1280px]">
+				<div className="flex justify-between mx-auto md:w-[768px] lg:w-[1024px] xl:w-[1280px]">
 					<h1 className="flex-center ml-1 min-w-[130px] min-h-[80px] text-center font-semibold text-2xl cursor-pointer">
 						<Link to="/">💿 LHKYLE</Link>
 					</h1>
