@@ -13,7 +13,7 @@ const ScrollToTopButton = ({ topPosToStopShowing = 300 }: ScrollToTopButtonProps
 		<>
 			{yOffset >= topPosToStopShowing && (
 				<button
-					className="fixed bottom-16 right-4 p-2 rounded-lg border-[1px] border-gray-200 bg-white dark:bg-dark hover:bg-gray-100 dark:hover:bg-gray-900 sm:animate-bounce"
+					className="fixed bottom-16 right-4 p-2 rounded-lg border-[1px] border-gray-200 bg-white dark:bg-dark hover:bg-gray-100 dark:hover:bg-gray-900 sm:animate-bounce sm:right-8 md:right-10"
 					onClick={() => {
 						window.scrollTo({
 							top: 0,
