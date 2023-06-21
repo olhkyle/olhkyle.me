@@ -4,13 +4,19 @@ import { FiSun, FiMoon } from 'react-icons/fi';
 import useTheme from '../../hooks/useTheme';
 import { ToggleTheme } from '../../hooks/useTheme';
 
-const ThemeButton = () => {
+interface ThemeButtonProps {
+	position: 'in' | 'out';
+}
+
+const ThemeButton = ({ position }: ThemeButtonProps) => {
 	const [theme, toggleTheme] = useTheme();
+
+	const positionClass = position === 'in' ? '' : 'absolute bottom-[120px] right-5';
 
 	return (
 		<button
 			className={clsx(
-				`absolute bottom-[77px] right-2.5 p-2 rounded-lg border-[1px] border-gray-200 bg-white dark:bg-dark z-50`,
+				`${positionClass} p-2 w-[42px] h-[42px] rounded-lg border-[1px] border-gray-200 bg-white dark:bg-dark z-50`,
 				{ 'hover:bg-gray-100': theme === 'light' },
 				{ 'hover:bg-gray-900': theme === 'dark' },
 			)}

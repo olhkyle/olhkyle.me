@@ -1,22 +1,12 @@
-import { Circles, RedirectButton } from '../components';
+import { Description, RedirectButton, Title } from '../components';
 import links from '../constants/links';
 
 const Home = () => {
 	return (
-		<div className="flex flex-col justify-center w-full h-[720px]">
-			<h1 className="relative">
-				<div className="text-7xl font-bold md:text-9xl">Welcome</div>
-				<div className="ml-2 text-4xl text-white font-outline-1 dark:text-dark dark:dark-outline-1 md:text-6xl">
-					To My Space 🔭
-				</div>
-				<Circles />
-			</h1>
-			<div className="mt-10 h-[80px] w-[320px] text-gray-400 sm:text-xl">
-				<p className="mx-2 py-[10px] px-2 text-sm text-center bg-gray-100 text-dark border-r-[3px] border-l-[3px] border-dark rounded-2xl sm:text-xl sm:w-[425px]">
-					<b>$OLHKYLE</b> === <span>Ordered-List-Human Kyle</span>
-				</p>
-			</div>
-			<div className="flex flex-wrap gap-6 ml-2 sm:ml-0">
+		<div className="flex flex-col justify-center items-center w-full h-[720px]">
+			<Title />
+			<Description />
+			<div className="flex flex-col flex-wrap gap-6 ml-2 mt-2 sm:ml-0 sm:flex-row">
 				{links.map(link => (
 					<RedirectButton key={link} path={link.toLowerCase()}>
 						{link}

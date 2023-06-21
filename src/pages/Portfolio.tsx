@@ -8,7 +8,7 @@ const Portfolio = () => {
 
 	return (
 		<>
-			<div className="flex flex-col justify-between sm:flex-row sm:gap-10">
+			<div className="flex flex-col justify-between mt-[2rem] sm:flex-row sm:gap-10 sm:mt-[4rem]">
 				<MainTitle>Portfolio.</MainTitle>
 				<LanguageSelect currentLang={currentLang} setCurrentLang={setCurrentLang} />
 			</div>

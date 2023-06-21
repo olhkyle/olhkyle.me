@@ -17,8 +17,8 @@ const AboutMe = () => {
 
 	return (
 		<>
-			<div className="flex justify-between w-full">
-				<div className="flex flex-col justify-between">
+			<div className="flex justify-between mt-[2rem] w-full sm:mt-[4rem]">
+				<div className="flex flex-col justify-between w-full">
 					<MainTitle>About Me.</MainTitle>
 					<LanguageSelect currentLang={currentLang} setCurrentLang={setCurrentLang} />
 				</div>

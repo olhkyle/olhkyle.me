@@ -7,7 +7,7 @@ interface CoverProps {
 const Cover = ({ currentLang }: CoverProps) => {
 	return (
 		<>
-			<div className="mt-20 mb-10 p-10 break-keep text-2xl lg:text-4xl border-[1px] border-gray-900 rounded-[2rem]">
+			<div className="mt-12 mb-10 p-10 break-keep text-2xl sm:mt-20 lg:text-4xl border-[1px] border-gray-900 rounded-[2rem]">
 				{currentLang === 'ENG' ? (
 					<p className="flex flex-col gap-4 text-2xl md:text-4xl">
 						<span className="font-bold">
