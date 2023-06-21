@@ -29,6 +29,7 @@ export default {
 				blue: {
 					100: 'var(--color-blue-100)',
 					200: 'var(--color-blue-200)',
+					300: 'var(--color-blue-300)',
 				},
 				purple: 'var(--color-purple)',
 				orange: {
