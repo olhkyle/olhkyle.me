@@ -10,6 +10,7 @@ export default {
 				black: 'var(--color-black)',
 				white: 'var(--color-white)',
 				gray: {
+					50: 'var(--color-gray-50)',
 					100: 'var(--color-gray-100)',
 					200: 'var(--color-gray-200)',
 					300: 'var(--color-gray-300)',
@@ -121,6 +122,9 @@ export default {
 					'0%': { transform: 'translateX(200%)' },
 					'100%': { transform: 'translateX(0%)' },
 				},
+			},
+			backdropBlur: {
+				sm2: '2px',
 			},
 		},
 	},
