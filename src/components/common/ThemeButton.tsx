@@ -11,7 +11,7 @@ interface ThemeButtonProps {
 const ThemeButton = ({ position }: ThemeButtonProps) => {
 	const [theme, toggleTheme] = useTheme();
 
-	const positionClass = position === 'in' ? '' : 'absolute bottom-[120px] right-5';
+	const positionClass = position === 'in' ? 'ml-2' : 'absolute bottom-[120px] right-5';
 
 	return (
 		<button

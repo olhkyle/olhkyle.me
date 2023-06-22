@@ -16,10 +16,10 @@ const SideNav = ({ isActive, toggleActive }: SideNavProps) => {
 
 	return (
 		<div
-			className={`fixed right-0 top-0 w-[280px] border-l-[1px] border-r-gray-900 bg-white h-screen h-[calc(var(--vh) * 100)] transition-transform ${
+			className={`fixed right-0 top-0 flex flex-col w-[280px] h-full border-l-[1px] border-l-gray-300 dark:border-l-gray-600 bg-white transition-transform ${
 				isActive ? 'translate-x-0' : 'translate-x-[280px]'
-			} duration-500 z-50 dark:bg-dark overflow-y-scroll sm:hidden`}>
-			<div className="flex justify-between items-center w-full h-[80px] border-b-[1px]">
+			} duration-500 z-50 dark:bg-dark sm:hidden`}>
+			<div className="flex justify-between items-center w-full h-[80px] border-b-[1px] border-b-gray-300 dark:border-b-gray-600">
 				<button className="p-4" onClick={toggleActive}>
 					<FiArrowLeft size="27" />
 				</button>
@@ -44,7 +44,7 @@ const SideNav = ({ isActive, toggleActive }: SideNavProps) => {
 						<div className="mb-2">
 							<h2 className="font-bold">Hyukmin Kwon (Kyle)</h2>
 						</div>
-						<div className="mb-6">
+						<div>
 							<p className="flex items-center">
 								<MdArrowRight size="18" />
 								<span>{GMAIL}</span>

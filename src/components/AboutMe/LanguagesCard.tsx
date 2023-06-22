@@ -9,9 +9,9 @@ const languages: Record<Lang, string[]> = { KOR: ['한국어', '영어'], ENG: [
 
 const LanguagesCard = ({ currentLang }: LanguagesCardProps) => {
 	return (
-		<div className="p-4">
+		<div className="mt-8 px-6 py-2 rounded-[2rem] bg-gray-50 dark:bg-gray-900 sm:bg-none">
 			<CardTitle>Languages</CardTitle>
-			<ul className="flex flex-col gap-2 mt-5 mb-10 break-keep text-lg">
+			<ul className="flex flex-col gap-2 my-5 break-keep text-lg">
 				{languages[currentLang].map(language => (
 					<li key={language} className="flex gap-2">
 						{language}

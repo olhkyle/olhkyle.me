@@ -2,7 +2,6 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
 import { Layout } from './components';
 import { AboutMe, Portfolio, Home, Login, NotFound, Register, Resume } from './pages';
-import useScreenHeightResize from './hooks/useScreenHeightResize';
 
 const router = createBrowserRouter([
 	{
@@ -42,8 +41,6 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-	useScreenHeightResize();
-
 	return (
 		<RecoilRoot>
 			<RouterProvider router={router} />

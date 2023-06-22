@@ -3,16 +3,16 @@ import { CardTitle } from '.';
 import { CLASS101, DESIGNTHOU } from '../../constants/url';
 
 interface Experience {
-	role: string | null;
+	role: string;
 	title: string;
-	content: string | null;
+	content: string;
 	duration: string;
 	link?: string;
 }
 
 const experience: Experience[] = [
 	{
-		role: null,
+		role: '',
 		title: '',
 		content: 'Zerobase FE Offline Bootcamp',
 		duration: '2023.01 - 2023.05',
@@ -40,14 +40,14 @@ const experience: Experience[] = [
 	{
 		role: 'Exchange Student in Germany',
 		title: '@Technische HochSchule Augsburg',
-		content: null,
+		content: '',
 		duration: '2019.03 - 2019.09',
 	},
 ];
 
 const ExperienceCard = () => {
 	return (
-		<div className="p-4">
+		<div className="mt-8 p-4 px-6 pb-8 rounded-[2rem] bg-gray-50 dark:bg-gray-900 sm:bg-none">
 			<CardTitle>Experience</CardTitle>
 			<ul className="flex flex-col gap-4 mt-5 break-keep text-lg">
 				{experience.map(({ role, title, content, duration, link }) => (
@@ -55,9 +55,9 @@ const ExperienceCard = () => {
 						<p>
 							{role}{' '}
 							<a href={link ? link : '#'}>
-								<span className="underline underline-offset-4 decoration-blue-300 hover:text-blue-200">{title}</span>
-							</a>
-							- {content} / <span className="font-grey-100">{duration}</span>
+								<span className="underline underline-offset-4 decoration-blue-100 hover:text-blue-200">{title}</span>
+							</a>{' '}
+							- {content} / <span className="font-gray-100">{duration}</span>
 						</p>
 					</li>
 				))}

@@ -10,3 +10,4 @@ export const FINEAPPLE_RETROSPECT =
 	'https://sumz.notion.site/Suspense-Option-in-AuthenticationGuard-HOC-cc74b24870004a78861f5b7d9f16ba5b?pvs=4';
 export const ESC_GITHUB = 'https://github.com/MinWonHaeSo/ESC_CLIENT';
 export const ESC_DEMO = 'https://www.youtube.com/watch?v=ndIasEiODu4&ab_channel=혁민권';
+export const AAVS = 'https://soomeenhahm.com/portfolio-item/social-algorithms/';

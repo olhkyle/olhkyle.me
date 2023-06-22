@@ -7,7 +7,7 @@ interface CardTitleProps {
 
 const CardTitle = ({ children }: CardTitleProps) => {
 	return (
-		<h2 className="mt-14 text-2xl font-semibold">
+		<h2 className="text-2xl font-semibold">
 			{children} <EmphasisCircle />
 		</h2>
 	);
