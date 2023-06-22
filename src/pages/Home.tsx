@@ -3,10 +3,10 @@ import links from '../constants/links';
 
 const Home = () => {
 	return (
-		<div className="flex flex-col justify-center items-center w-full h-[720px]">
+		<div className="flex flex-col justify-center items-center my-8 w-full">
 			<Title />
 			<Description />
-			<div className="flex flex-col flex-wrap gap-6 ml-2 mt-2 sm:ml-0 sm:flex-row">
+			<div className="flex flex-col flex-wrap gap-6 mx-auto justify-center mt-5  sm:mt-20 sm:flex-row">
 				{links.map(link => (
 					<RedirectButton key={link} path={link.toLowerCase()}>
 						{link}
