@@ -18,7 +18,7 @@ const SideNav = ({ isActive, toggleActive }: SideNavProps) => {
 		<div
 			className={`fixed right-0 top-0 w-[280px] border-l-[1px] border-r-gray-900 bg-white h-screen h-[calc(var(--vh) * 100)] transition-transform ${
 				isActive ? 'translate-x-0' : 'translate-x-[280px]'
-			} duration-500 z-50 dark:bg-dark sm:hidden`}>
+			} duration-500 z-50 dark:bg-dark overflow-y-scroll sm:hidden`}>
 			<div className="flex justify-between items-center w-full h-[80px] border-b-[1px]">
 				<button className="p-4" onClick={toggleActive}>
 					<FiArrowLeft size="27" />
@@ -32,7 +32,7 @@ const SideNav = ({ isActive, toggleActive }: SideNavProps) => {
 			</div>
 
 			<div className="flex h-full">
-				<div className="flex flex-col justify-between w-full h-full">
+				<div className="flex flex-col justify-between w-full">
 					<ul className="flex flex-col gap-2 p-5">
 						{links.map((link, idx) => (
 							<li key={idx}>
@@ -40,8 +40,8 @@ const SideNav = ({ isActive, toggleActive }: SideNavProps) => {
 							</li>
 						))}
 					</ul>
-					<div className="mb-[60px] p-5">
-						<div className="mb-2" onClick={() => {}}>
+					<div className="p-5">
+						<div className="mb-2">
 							<h2 className="font-bold">Hyukmin Kwon (Kyle)</h2>
 						</div>
 						<div className="mb-6">

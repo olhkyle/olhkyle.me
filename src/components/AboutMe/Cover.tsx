@@ -24,7 +24,7 @@ const Cover = ({ currentLang }: CoverProps) => {
 					</p>
 				)}
 			</div>
-			<div className="break-keep text-lg leading-7">
+			<div className="break-keep text-lg leading-7 text-gray-500">
 				{currentLang === 'ENG' ? (
 					<p className="p-8">
 						I graduated from Kookmin University in 2023 with studying Architecture. <br />

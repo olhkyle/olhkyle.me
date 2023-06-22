@@ -13,7 +13,7 @@ const strengths: Record<Lang, string[]> = {
 	],
 	ENG: [
 		'I have the strength to keep the basic💡, no matter what project or work I participate in.',
-		'I really like to make something related with visual 🖥️',
+		'I like to make something related with visual 🖥️',
 		` I keep finding ways on how to enhance UI/UX on products. As a FE Developer, I reckon UX should be considered
      the best 🚀`,
 	],
