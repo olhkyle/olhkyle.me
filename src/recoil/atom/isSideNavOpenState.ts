@@ -8,7 +8,7 @@ const localStorageEffect = ({ onSet }: any) => {
 
 const isSideNavOpenState = atom({
 	key: 'isSideNavOpenState',
-	default: JSON.parse(localStorage.getItem(KEY) as string) ?? true,
+	default: JSON.parse(localStorage.getItem(KEY) as string) ?? false,
 	effects: [localStorageEffect],
 });
 
