@@ -1,11 +1,12 @@
 import React from 'react';
 import DoubleSubTitle from './DoubleSubTitle';
-import { HighlightText } from '../common';
+import { Callout, HighlightText } from '../common';
 import ThirdSubTitle from './ThirdSubTitle';
 import ProjectTitle from './ProjectTitle';
+import { Link } from 'react-router-dom';
 
 const Project = ({
-	project: { title, subtitle, team, composition, links, overview, myTasks, improvement, techStacks },
+	project: { title, subtitle, team, composition, links, callout, overview, myTasks, improvement, techStacks },
 }: {
 	project: Project;
 }) => {
@@ -15,8 +16,8 @@ const Project = ({
 				<ProjectTitle>{title}</ProjectTitle>
 				<h3 className="text-xl text-semibold">{subtitle}</h3>
 				<div className="flex gap-1 mt-2 sm:flex-col md:flex-row sm:gap-0">
-					<p className="text-gray-500 dark:text-gray-300">{team ? 'Team Project' : 'Personal Project'}</p>
-					<p className="text-gray-500 dark:text-gray-300">{composition}</p>
+					<p className="responsive-text-gray">{team ? 'Team Project' : 'Personal Project'}</p>
+					<p className="responsive-text-gray">{composition}</p>
 				</div>
 				<div className="sm:row-span-1 mt-3">
 					<ThirdSubTitle>Links</ThirdSubTitle>
@@ -24,13 +25,15 @@ const Project = ({
 						{links.map(({ title, href, icon }) => (
 							<li key={title} className="inline-flex items-center gap-1">
 								{icon}
-								<a href={href} className="hover-underline">
+								<Link to={href} target="_blank" className="hover-underline">
 									{title}
-								</a>
+								</Link>
 							</li>
 						))}
 					</ul>
 				</div>
+
+				{callout !== '' && <Callout margin="mt-10" content={callout} />}
 			</div>
 
 			<div className="row-span-1 sm:col-span-2 sm:h-[300px]">

@@ -9,7 +9,7 @@ interface EtcProps {
 const Etc = ({ _etc: { title, department, description, startDate, endDate, link } }: EtcProps) => {
 	return (
 		<li>
-			<span className="text-gray-500 dark:text-gray-300">{formattedDate({ startDate, endDate })}</span>
+			<span className="responsive-text-gray">{formattedDate({ startDate, endDate })}</span>
 			<h4 className="text-lg font-medium sm:text-xl sm:font-semibold">{title}</h4>
 			<p className="text-base">
 				{link === '' ? (
@@ -23,7 +23,7 @@ const Etc = ({ _etc: { title, department, description, startDate, endDate, link 
 					</a>
 				)}
 			</p>
-			<p className="mt-1 text-gray-500 dark:text-gray-300">
+			<p className="mt-1 responsive-text-gray">
 				{description ? '-' : ''} {description}
 			</p>
 		</li>

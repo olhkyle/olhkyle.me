@@ -1,14 +1,15 @@
 import React from 'react';
 
 interface CalloutProps {
+	margin?: string;
 	content: string;
 }
 
-const Callout = ({ content }: CalloutProps) => {
+const Callout = ({ margin, content }: CalloutProps) => {
 	return (
-		<div className="border-[1px] border-gray-300 rounded-lg">
+		<div className={`flex gap-2 ${margin} mr-2 p-2 border-[1px] border-gray-300 rounded-lg`}>
 			<span>💿</span>
-			<p>{content}</p>
+			<p className="responsive-text-gray">{content}</p>
 		</div>
 	);
 };

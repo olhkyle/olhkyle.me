@@ -8,12 +8,12 @@ interface EducationProps {
 const Education = ({ education: { title, subTitle, description, startDate, endDate } }: EducationProps) => {
 	return (
 		<li className="flex flex-col">
-			<span className="text-gray-500 dark:text-gray-300">{formattedDate({ startDate, endDate })}</span>
+			<span className="responsive-text-gray">{formattedDate({ startDate, endDate })}</span>
 			<h4 className="text-lg font-medium sm:text-xl sm:font-semibold">{title}</h4>
 			<p>{subTitle}</p>
 			<ul>
 				{description?.map(desc => (
-					<li key={desc} className="text-gray-500 dark:text-gray-300">
+					<li key={desc} className="responsive-text-gray">
 						- {desc}
 					</li>
 				))}
