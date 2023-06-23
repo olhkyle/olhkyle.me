@@ -9,7 +9,7 @@ interface SocialBadgeProps {
 
 const SocialBadge = ({ linkHref, children }: SocialBadgeProps) => {
 	return (
-		<Link to={linkHref}>
+		<Link to={linkHref} target="_blank">
 			<div className="p-1">{children}</div>
 		</Link>
 	);
