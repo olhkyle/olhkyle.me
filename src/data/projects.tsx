@@ -21,6 +21,7 @@ const projects: Project[] = [
 				icon: <AiOutlineLink size="22" />,
 			},
 		],
+		callout: `If you want to try to use Deployed Service, you have to register because of Firebase's security rule.`,
 		overview: 'Community Web Application related to Computer / IT and Game topics',
 		myTasks: [
 			'Created UI guidelines for colors, font styles, component styling, and layout',
@@ -68,6 +69,7 @@ const projects: Project[] = [
 				icon: <BiMovie size="22" />,
 			},
 		],
+		callout: '',
 		overview: 'Web Application of location-based gym search, booking, and goods rental',
 		myTasks: [
 			`Designed wireframe for a consistent UI`,

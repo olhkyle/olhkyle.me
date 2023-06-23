@@ -10,6 +10,7 @@ declare type Project = {
 		href: string;
 		icon: React.ReactNode;
 	}>;
+	callout: string;
 	overview: string;
 	myTasks: string[];
 	improvement: string[];
