@@ -16,7 +16,7 @@ const projects: Project[] = [
 				icon: <AiOutlineLink size="22" />,
 			},
 			{
-				title: 'Retrospect',
+				title: 'Collaboration History',
 				href: FINEAPPLE_RETROSPECT,
 				icon: <AiOutlineLink size="22" />,
 			},
