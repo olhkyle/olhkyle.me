@@ -20,11 +20,11 @@ interface Experience {
 
 const experience: Experience[] = [
 	{
-		ENRole: '',
-		KRRole: '',
+		ENRole: 'Zerobase FrontEnd Offline Bootcamp',
+		KRRole: '제로베이스 프론트엔드 오프라인 과정',
 		title: '',
-		ENContent: 'Zerobase FE Offline Bootcamp',
-		KRContent: '제로베이스 프론트엔드 오프라인 과정',
+		ENContent: '',
+		KRContent: '',
 		startDate: new Date(2023, 1),
 		endDate: new Date(2023, 5),
 	},
@@ -80,23 +80,27 @@ const ExperienceCard = () => {
 			<ul className="flex flex-col gap-6 mt-5 break-keep text-lg">
 				{experience.map(({ ENRole, KRRole, title, KRTitle, ENContent, KRContent, startDate, endDate, link }) => (
 					<li key={title} className="flex flex-col">
-						<div className="responsive-text-gray">{formattedDate({ startDate, endDate })}</div>
-						<div>
-							<span className="text-lg">
-								{currentLang === 'ENG' ? ENRole : KRRole} {ENRole ? ' ∙ ' : ''}
-							</span>
-							<Link
-								to={link ? link : '#'}
-								target={link ? '_blank' : ''}
-								className={link ? 'cursor-pointer' : 'cursor-default'}>
-								<span
-									className={`${
-										link ? 'text-bold underline underline-offset-4 decoration-blue-200 hover:text-blue-200' : ''
-									}`}>
-									<span>{currentLang === 'ENG' ? title : KRTitle}</span>
+						<div className="text-base responsive-text-gray">{formattedDate({ startDate, endDate })}</div>
+						<div className="flex flex-col">
+							<div>
+								<span className="text-lg">
+									{currentLang === 'ENG' ? ENRole : KRRole} {title ? ' ∙ ' : ''}
 								</span>
-							</Link>
-							<span className="ml-1">{currentLang === 'ENG' ? ENContent : KRContent}</span>
+								<Link
+									to={link ? link : '#'}
+									target={link ? '_blank' : ''}
+									className={link ? 'cursor-pointer' : 'cursor-default'}>
+									<span
+										className={`${
+											link ? 'text-bold underline underline-offset-4 decoration-blue-200 hover:text-blue-200' : ''
+										}`}>
+										<span>{currentLang === 'ENG' ? title : KRTitle}</span>
+									</span>
+								</Link>
+							</div>
+							<span className="mt-1 text-base responsive-text-gray">
+								{currentLang === 'ENG' ? ENContent : KRContent}
+							</span>
 						</div>
 					</li>
 				))}
