@@ -1,5 +1,5 @@
 import React from 'react';
-import DoubleSubTitle from './DoubleSubTitle';
+import DoubleSubTitle from './titles/DoubleSubTitle';
 import { GMAIL } from '../../constants/url';
 
 const ContactCard = () => {

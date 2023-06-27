@@ -1,5 +1,5 @@
 import React from 'react';
-import { EmphasisCircle } from '../common';
+import { EmphasisCircle } from '../../common';
 
 interface DoubleSubTitleProps {
 	children: React.ReactNode;

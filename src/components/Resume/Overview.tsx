@@ -5,7 +5,7 @@ const Overview = () => {
 		<div className="flex justify-between items-center">
 			<div>
 				<div className="text-[2.5rem] font-bold break-keep sm:text-[2.5rem] md:text-6xl">Hyukmin Kwon</div>
-				<p className="mt-1 text-lg md:text-xl break-keep">Front-End Developer with background of Architecture</p>
+				<p className="mt-1 text-lg md:text-xl break-keep">FrontEnd Developer with background of Architecture</p>
 				<ul className="mt-10 text-base responsive-text-gray break-keep">
 					<li>@ Striving for steady growth</li>
 					<li>@ Focusing on the details of UI/UX</li>

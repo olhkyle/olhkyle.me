@@ -1,5 +1,5 @@
 import React from 'react';
-import DoubleSubTitle from './DoubleSubTitle';
+import DoubleSubTitle from './titles/DoubleSubTitle';
 import { GITHUB, LINKEDIN } from '../../constants/url';
 
 const SLICE_INDEX_OF_STRING = 8;

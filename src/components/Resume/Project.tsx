@@ -1,9 +1,8 @@
 import React from 'react';
-import DoubleSubTitle from './DoubleSubTitle';
-import { Callout, HighlightText } from '../common';
-import ThirdSubTitle from './ThirdSubTitle';
-import ProjectTitle from './ProjectTitle';
 import { Link } from 'react-router-dom';
+import { Callout, HighlightText } from '../common';
+import { ThirdSubTitle, ProjectTitle, DoubleSubTitle } from '.';
+import manageColorScheme from '../../utils/manageColorScheme';
 
 const Project = ({
 	project: { title, subtitle, team, composition, links, callout, overview, myTasks, improvement, techStacks },
@@ -14,7 +13,7 @@ const Project = ({
 		<li className="grid grid-cols-1 sm:grid-flow-col gap-4 mt-[2.5rem] sm:grid-cols-3 sm:grid-rows-[100px_1.1fr_1fr_0.5fr]">
 			<div className="row-span-1 sm:row-span-4">
 				<ProjectTitle>{title}</ProjectTitle>
-				<h3 className="text-xl text-semibold">{subtitle}</h3>
+				<h3 className="text-lg text-semibold">{subtitle}</h3>
 				<div className="flex gap-1 mt-2 sm:flex-col md:flex-row sm:gap-0">
 					<p className="responsive-text-gray">{team ? 'Team Project' : 'Personal Project'}</p>
 					<p className="responsive-text-gray">{composition}</p>
@@ -63,7 +62,7 @@ const Project = ({
 				<DoubleSubTitle>Tech Stacks</DoubleSubTitle>
 				<div className="flex flex-wrap gap-2">
 					{techStacks.map(stack => (
-						<HighlightText key={stack} color="text-blue-200">
+						<HighlightText key={stack} color={manageColorScheme(stack)}>
 							{stack}
 						</HighlightText>
 					))}
