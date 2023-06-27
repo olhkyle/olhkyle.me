@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
-import { Layout } from './components';
+import { Layout, PortfolioProjectLayout, _Project } from './components';
 import { AboutMe, Portfolio, Home, Login, NotFound, Register, Resume } from './pages';
 
 const router = createBrowserRouter([
@@ -25,8 +25,20 @@ const router = createBrowserRouter([
 				element: <AboutMe />,
 			},
 			{
-				path: '/portfolio',
+				path: 'portfolio',
 				element: <Portfolio />,
+				children: [
+					{
+						path: 'post',
+						element: <PortfolioProjectLayout />,
+						children: [
+							{
+								path: ':title',
+								element: <_Project />,
+							},
+						],
+					},
+				],
 			},
 			{
 				path: '/resume',
