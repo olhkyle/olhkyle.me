@@ -12,7 +12,7 @@
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
 
-	--color-black: #000;
+	--color-black: #191a20;
 	--color-white: #fff;
 
 	--color-gray-50: #f7f7f7;
@@ -36,6 +36,8 @@
 	--color-blue-300: #e8f2ff;
 
 	--color-purple: #6466f1;
+
+	--color-yellow: #ffd644;
 
 	--color-orange-100: #ffa927;
 	--color-orange-200: #fe9800;
@@ -99,4 +101,8 @@ body[data-theme='light'] {
 
 .responsive-text-gray {
 	@apply text-gray-500 dark:text-gray-300;
+}
+
+.hover-ring {
+	@apply hover:ring-2 hover:ring-blue-200 hover:ring-offset-4 ring-offset-white dark:ring-offset-dark transition delay-100 duration-200 ease-in-out;
 }
