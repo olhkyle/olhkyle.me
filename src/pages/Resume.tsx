@@ -3,18 +3,17 @@ import Recoil from 'recoil';
 import { Divider, LanguageSelect } from '../components';
 import currentLangState from '../recoil/atom/currentLang';
 import { ContactCard, LinksCard, Project, SubTitle, Overview, SkillStack, Education, Etc } from '../components/Resume';
-import projects from '../data/projects';
-import { education, etc, skills } from '../data';
+import { education, etc, skills, projects } from '../data';
 
 const Resume = () => {
 	const [currentLang, setCurrentLang] = Recoil.useRecoilState(currentLangState);
 
 	return (
 		<>
-			<div className="flex flex-col justify-between mt-[1rem] sm:flex-row sm:gap-10 sm:mt-[2rem]">
+			<div className="flex flex-col justify-between sm:flex-row sm:gap-10 sm:mt-[2rem]">
 				<LanguageSelect currentLang={currentLang} setCurrentLang={setCurrentLang} />
 			</div>
-			<Divider marginTop="mt-4" />
+			<Divider marginTop="mt-0" />
 			{currentLang === 'ENG' ? (
 				<div className="mt-[2rem] sm:mt-[4rem]">
 					<Overview />

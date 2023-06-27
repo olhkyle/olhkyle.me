@@ -1,22 +1,22 @@
 import React from 'react';
 import Recoil from 'recoil';
-import { LanguageSelect, MainTitle } from '../components';
+import { LanguageSelect, MainTitle, PortfolioProject } from '../components';
 import currentLangState from '../recoil/atom/currentLang';
+import { projects } from '../data';
 
 const Portfolio = () => {
 	const [currentLang, setCurrentLang] = Recoil.useRecoilState(currentLangState);
 
 	return (
 		<>
-			<div className="flex flex-col justify-between mt-[2rem] sm:flex-row sm:gap-10 sm:mt-[4rem]">
-				<MainTitle>Portfolio.</MainTitle>
+			<div className="flex flex-col justify-between sm:mt-[2rem]">
 				<LanguageSelect currentLang={currentLang} setCurrentLang={setCurrentLang} />
+				<MainTitle>Portfolio.</MainTitle>
 			</div>
-			<div className="flex flex-col gap-10 mx-auto my-10 py-10 px-5 rounded-[2rem] bg-gray-50 dark:bg-gray-900 text-center sm:rounded-full">
-				<div className="text-xl sm:text-2xl underline decoration-blue-200">
-					{currentLang === 'ENG' ? `Currently, this page being prepared 👷🏻‍♂️` : `현재 이 페이지는 준비중 입니다 👷🏻‍♂️`}
-				</div>
-				<div className="text-xl sm:text-2xl">Coming Soon...</div>
+			<div className="grid grid-cols-4 gap-x-6 mt-12 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl mb-64">
+				{projects.map(project => (
+					<PortfolioProject key={project.title} project={project} />
+				))}
 			</div>
 		</>
 	);

@@ -74,7 +74,7 @@ const projects: Project[] = [
 		myTasks: [
 			`Designed wireframe for a consistent UI`,
 			`Determined Client Side Routing structure with React Router Dom`,
-			`Developed User Authentication-related features and UI, such as Login, Signup, Forget-Password, and Member Detail pages`,
+			`Developed User Authentication-related features and UI, such as Login, Signup, Forgot-Password, and Member Detail pages`,
 			`Implemented Social Login with JWT and OAuth 2.0`,
 			`Developed a gym booking page using conditional rendering by steps`,
 			`Implemented gym bookmark, reservation, and notification history pages with Server State and Cache Management using RTK Query`,
@@ -95,6 +95,29 @@ const projects: Project[] = [
 			'Github Actions',
 			'AWS Cloudfront/S3',
 		],
+	},
+	{
+		title: 'Vanilla Trello',
+		subtitle: '',
+		team: false,
+		composition: '',
+		links: [
+			{
+				title: 'Github',
+				href: ESC_GITHUB,
+				icon: <AiOutlineGithub size="22" />,
+			},
+			{
+				title: 'Demo Video',
+				href: ESC_DEMO,
+				icon: <BiMovie size="22" />,
+			},
+		],
+		callout: '',
+		overview: 'Trello Clone project using vanilla JavaScript only',
+		myTasks: [],
+		improvement: [],
+		techStacks: ['HTML', 'SASS', 'JavaScript'],
 	},
 ];
 
