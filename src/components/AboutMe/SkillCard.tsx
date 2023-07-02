@@ -11,9 +11,7 @@ interface Skill {
 const skills: Skill[] = [
 	{ category: 'html/css', techStacks: ['HTML', 'CSS3', 'SASS', 'Styled-Components', 'Emotion', 'TailwindCSS'] },
 	{ category: 'js/ts', techStacks: ['JavaScript[ES6+]', 'TypeScript'] },
-	{ category: 'ui library', techStacks: ['React'] },
-	{ category: 'global/server state library', techStacks: ['Recoil', 'Redux Toolkit', 'React Query'] },
-	{ category: 'react component library', techStacks: ['Mantine UI'] },
+	{ category: 'library', techStacks: ['React', 'Recoil', 'Redux Toolkit', 'React Query', 'Mantine'] },
 	{ category: 'server side', techStacks: ['Node.js', 'Express.js'] },
 	{ category: 'collaboration tools', techStacks: ['Git', 'Github'] },
 	{ category: 'design tools', techStacks: ['Figma', 'Photoshop', 'Illustrator', 'Premiere Pro'] },
