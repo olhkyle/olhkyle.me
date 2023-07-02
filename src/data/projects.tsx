@@ -1,6 +1,13 @@
 import { AiOutlineGithub, AiOutlineLink } from 'react-icons/ai';
 import { BiMovie } from 'react-icons/bi';
-import { ESC_DEMO, ESC_GITHUB, FINEAPPLE_DEPLOY, FINEAPPLE_GITHUB, FINEAPPLE_RETROSPECT } from '../constants/url';
+import {
+	ESC_DEMO,
+	ESC_GITHUB,
+	FINEAPPLE_DEPLOY,
+	FINEAPPLE_GITHUB,
+	FINEAPPLE_RETROSPECT,
+	TRELLO_GITHUB,
+} from '../constants/url';
 
 const projects: Project[] = [
 	{
@@ -104,20 +111,19 @@ const projects: Project[] = [
 		links: [
 			{
 				title: 'Github',
-				href: ESC_GITHUB,
+				href: TRELLO_GITHUB,
 				icon: <AiOutlineGithub size="22" />,
-			},
-			{
-				title: 'Demo Video',
-				href: ESC_DEMO,
-				icon: <BiMovie size="22" />,
 			},
 		],
 		callout: '',
 		overview: 'Trello Clone project using vanilla JavaScript only',
-		myTasks: [],
+		myTasks: [
+			'Implemented Trello without using Library and Framework',
+			'Designed code to create DOM dinamically, working like SPA(React)',
+			'Implemented diffing algorithm for Reconciliation and CBD(Component Based Developemnt) using Class(ES6+)',
+		],
 		improvement: [],
-		techStacks: ['HTML', 'SASS', 'JavaScript'],
+		techStacks: ['HTML', 'SASS', 'JavaScript', 'lodash'],
 	},
 ];
 
