@@ -13,3 +13,4 @@ export { default as HighlightText } from './HighlightText';
 export { default as Spacer } from './Spacer';
 export { default as EmphasisCircle } from './EmphasisCircle';
 export { default as Callout } from './Callout';
+export { default as GradientSquare } from './GradientSquare';

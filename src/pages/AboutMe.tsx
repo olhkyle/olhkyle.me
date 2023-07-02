@@ -10,6 +10,7 @@ import {
 	LanguagesCard,
 	ExperienceCard,
 	KindOfDeveloperCard,
+	GradientSquare,
 } from '../components';
 import currentLangState from '../recoil/atom/currentLang';
 
@@ -23,9 +24,7 @@ const AboutMe = () => {
 					<LanguageSelect currentLang={currentLang} setCurrentLang={setCurrentLang} />
 					<MainTitle>About Me.</MainTitle>
 				</div>
-				<div className="relative hidden w-48 h-48 bg-gradient-to-r from-blue-100 to-white md:block">
-					<span className={`absolute w-32 h-32 bg-white dark:bg-dark rotate-[45deg] z-10`} />
-				</div>
+				<GradientSquare />
 			</div>
 
 			<Cover currentLang={currentLang} />

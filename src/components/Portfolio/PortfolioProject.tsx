@@ -6,7 +6,7 @@ import manageColorScheme from '../../utils/manageColorScheme';
 const PortfolioProject = ({ project: { title, techStacks, overview } }: { project: Project }) => {
 	return (
 		<div className="col-span-4 mb-12">
-			<Link to={`post/${title.toLowerCase().replace(/\s/g, '-')}`}>
+			<Link to={`/project/${title.replace(/\s/g, '-')}`}>
 				<figure className="aspect-h-4 aspect-w-3 rounded-[2rem]  hover-ring">
 					<img src="/portfolio/2.jpg" alt="mee" className="rounded-[2rem] object-cover object-center w-full" />
 				</figure>
