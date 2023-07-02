@@ -9,6 +9,7 @@ import {
 	Divider,
 	LanguagesCard,
 	ExperienceCard,
+	KindOfDeveloperCard,
 } from '../components';
 import currentLangState from '../recoil/atom/currentLang';
 
@@ -17,13 +18,13 @@ const AboutMe = () => {
 
 	return (
 		<>
-			<div className="flex justify-between w-full sm:mt-[2rem]">
-				<div className="flex flex-col justify-between w-full">
+			<div className="flex justify-between items-center w-full sm:mt-[2rem]">
+				<div className="flex flex-col justify-between">
 					<LanguageSelect currentLang={currentLang} setCurrentLang={setCurrentLang} />
 					<MainTitle>About Me.</MainTitle>
 				</div>
-				<div className="hidden justify-center items-center p-4 w-64 border-[1px] border-dark dark:border-gray-600 rounded-[50%] lg:flex object-cover">
-					<img src="./own-furnitures.png" alt="furnitures" className="block w-full h-full bg-transparent`" />
+				<div className="relative hidden w-48 h-48 bg-gradient-to-r from-blue-100 to-white md:block">
+					<span className={`absolute w-32 h-32 bg-white dark:bg-dark rotate-[45deg] z-10`} />
 				</div>
 			</div>
 
@@ -31,6 +32,7 @@ const AboutMe = () => {
 			<Divider />
 
 			<StrengthsCard currentLang={currentLang} />
+			<KindOfDeveloperCard currentLang={currentLang} />
 			<SkillCard />
 			<LanguagesCard currentLang={currentLang} />
 			<ExperienceCard />

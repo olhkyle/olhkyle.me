@@ -6,7 +6,7 @@ const ContactCard = () => {
 	return (
 		<div className="col-span-1 mt-10 ">
 			<DoubleSubTitle>Contact</DoubleSubTitle>
-			<ul>
+			<ul className="flex flex-col gap-1">
 				<li className="">+82 10-3614-3373</li>
 				<li>{GMAIL}</li>
 			</ul>

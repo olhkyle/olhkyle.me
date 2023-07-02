@@ -13,7 +13,7 @@ const LanguagesCard = ({ currentLang }: LanguagesCardProps) => {
 			<CardTitle>Languages</CardTitle>
 			<ul className="flex flex-col gap-2 my-5 break-keep text-lg">
 				{languages[currentLang].map(language => (
-					<li key={language} className="flex gap-2">
+					<li key={language} className="flex gap-2 text-base sm:text-lg">
 						{language}
 					</li>
 				))}
