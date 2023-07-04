@@ -1,0 +1,25 @@
+import React from 'react';
+import formattedDate from '../../utils/formattedDate';
+
+interface DevExperienceProps {
+	experience: DevExperience;
+}
+
+const DevExperience = ({ experience: { title, subTitle, description, startDate, endDate } }: DevExperienceProps) => {
+	return (
+		<li className="flex flex-col">
+			<span className="responsive-text-gray">{formattedDate({ startDate, endDate })}</span>
+			<h4 className="text-lg font-medium sm:text-xl sm:font-semibold">{title}</h4>
+			{subTitle && <p>{subTitle}</p>}
+			<ul>
+				{description?.map(desc => (
+					<li key={desc} className="responsive-text-gray">
+						- {desc}
+					</li>
+				))}
+			</ul>
+		</li>
+	);
+};
+
+export default DevExperience;

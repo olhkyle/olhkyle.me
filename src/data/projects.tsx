@@ -11,10 +11,37 @@ import {
 
 const projects: Project[] = [
 	{
+		title: 'Vanilla Trello',
+		subtitle: '',
+		team: false,
+		startDate: new Date(2023, 6, 20),
+		endDate: '',
+		composition: '',
+		links: [
+			{
+				title: 'Github',
+				href: TRELLO_GITHUB,
+				icon: <AiOutlineGithub size="22" />,
+			},
+		],
+		callout: '',
+		overview: 'Trello Clone project using Vanilla JavaScript only',
+		myTasks: [
+			'Implemented SPA (Single Page Application) using Vanilla JavaScript without any libraries or frameworks',
+			`Created a diffing algorithm similar to React's Reconciliation`,
+			`Designed a CBD library based on the implemented diffing algorithm, using Class (ES6+) syntax`,
+			`Implemented various DOM event interactions using event delegation`,
+		],
+		improvement: ['currently refactoring'],
+		techStacks: ['HTML', 'SASS', 'JavaScript', 'lodash'],
+	},
+	{
 		title: 'FineApple',
 		subtitle: '',
 		team: true,
-		composition: '∙ 3 FE',
+		startDate: new Date(2023, 4, 17),
+		endDate: new Date(2023, 5, 23),
+		composition: '3 FE',
 		links: [
 			{ title: 'Github', href: FINEAPPLE_GITHUB, icon: <AiOutlineGithub size="22" /> },
 			{
@@ -31,12 +58,12 @@ const projects: Project[] = [
 		callout: `If you want to try to use Deployed Service, you have to register because of Firebase's security rule.`,
 		overview: 'Community Web Application related to Computer / IT and Game topics',
 		myTasks: [
-			'Created UI guidelines for colors, font styles, component styling, and layout',
-			'Designed CRUD for question list & details using Firebase API and React Query',
+			`Implemented declarative components for building Concurrent UI Patterns using React Query and Suspense.`,
 			'Developed AutoComplete UI Component based on keyword search for titles of selected topics and questions in the Select component',
 			'Implemented Infinite Scroll to fetch a page unit list of topic-related questions',
 			'Implemented custom styling of Mantine Core components with Emotion',
 			'Deployed Frontend with Firebase and Github Actions',
+			'Created UI guidelines for colors, font styles, component styling, and layout',
 		],
 		improvement: [
 			'Controlled Routing based on user info and login status, using Higher Order Component(HOC) , such as AuthenticationGuard Component',
@@ -63,7 +90,9 @@ const projects: Project[] = [
 		title: 'ESC',
 		subtitle: '(Easy Sports Club)',
 		team: true,
-		composition: '∙ 2 FE & 3 BE',
+		startDate: new Date(2022, 11, 20),
+		endDate: new Date(2022, 12, 30),
+		composition: '2 FE & 3 BE',
 		links: [
 			{
 				title: 'Github',
@@ -79,17 +108,16 @@ const projects: Project[] = [
 		callout: '',
 		overview: 'Web Application of location-based gym search, booking, and goods rental',
 		myTasks: [
-			`Designed wireframe for a consistent UI`,
-			`Determined Client Side Routing structure with React Router Dom`,
 			`Developed User Authentication-related features and UI, such as Login, Signup, Forgot-Password, and Member Detail pages`,
 			`Implemented Social Login with JWT and OAuth 2.0`,
 			`Developed a gym booking page using conditional rendering by steps`,
 			`Implemented gym bookmark, reservation, and notification history pages with Server State and Cache Management using RTK Query`,
+			`Designed wireframe for a consistent UI`,
 		],
 		improvement: [
-			`Enhanced collaborative productivity by designing highly reusable UI elements like button and input as Atom(Recoil Global State)`,
+			`Enhanced collaborative productivity by designing highly reusable UI elements like button and input as Atom unit`,
 			`Refactored by declaring TypeScript Interface type with redundant properties and extending it to reduce unnecessary type declaration code`,
-			`Defined type and palette constants related to team members and styles, then writed code to implement consistent UI`,
+			`Defined style-related types and palette constants, and writed code to implement a consistent UI.`,
 		],
 		techStacks: [
 			'React',
@@ -102,28 +130,6 @@ const projects: Project[] = [
 			'Github Actions',
 			'AWS Cloudfront/S3',
 		],
-	},
-	{
-		title: 'Vanilla Trello',
-		subtitle: '',
-		team: false,
-		composition: '',
-		links: [
-			{
-				title: 'Github',
-				href: TRELLO_GITHUB,
-				icon: <AiOutlineGithub size="22" />,
-			},
-		],
-		callout: '',
-		overview: 'Trello Clone project using vanilla JavaScript only',
-		myTasks: [
-			'Implemented Trello without using Library and Framework',
-			'Designed code to create DOM dinamically, working like SPA(React)',
-			'Implemented diffing algorithm for Reconciliation and CBD(Component Based Developemnt) using Class(ES6+)',
-		],
-		improvement: [],
-		techStacks: ['HTML', 'SASS', 'JavaScript', 'lodash'],
 	},
 ];
 

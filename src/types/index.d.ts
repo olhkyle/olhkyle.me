@@ -5,6 +5,8 @@ declare type Project = {
 	subtitle: string;
 	team: boolean;
 	composition: string;
+	startDate: Date;
+	endDate: Date | string;
 	links: Array<{
 		title: string;
 		href: string;
@@ -30,6 +32,10 @@ declare type Project = {
 
 // declare type Skill = HTML | CSS | JS | TS | SPA | GlobalState | ServerState | BackEnd | Collaboration | UITool;
 declare type SkillStack = { skill: string[]; description: string };
+
+declare interface DevExperience extends Education {
+	links: string[];
+}
 
 declare type Education = {
 	id: string;

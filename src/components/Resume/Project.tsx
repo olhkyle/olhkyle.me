@@ -3,9 +3,23 @@ import { Link } from 'react-router-dom';
 import { Callout, HighlightText } from '../common';
 import { ThirdSubTitle, ProjectTitle, DoubleSubTitle } from '.';
 import manageColorScheme from '../../utils/manageColorScheme';
+import formattedDate from '../../utils/formattedDate';
 
 const Project = ({
-	project: { title, subtitle, team, composition, links, callout, overview, myTasks, improvement, techStacks },
+	project: {
+		title,
+		subtitle,
+		team,
+		startDate,
+		endDate,
+		composition,
+		links,
+		callout,
+		overview,
+		myTasks,
+		improvement,
+		techStacks,
+	},
 }: {
 	project: Project;
 }) => {
@@ -14,10 +28,14 @@ const Project = ({
 			<div className="row-span-1 sm:row-span-4">
 				<ProjectTitle>{title}</ProjectTitle>
 				<h3 className="text-lg text-semibold">{subtitle}</h3>
-				<div className="flex gap-1 mt-2 sm:flex-col md:flex-row sm:gap-0">
-					<p className="responsive-text-gray">{team ? 'Team Project' : 'Personal Project'}</p>
-					<p className="responsive-text-gray">{composition}</p>
+				<div className="flex gap-2 mt-4 sm:flex-col md:flex-row sm:gap-0">
+					<p className="responsive-text-gray">
+						{team ? 'Team Project' : 'Personal Project'}
+						{composition && ` · `}
+					</p>
+					<p className="ml-1 responsive-text-gray"> {composition}</p>
 				</div>
+				<p className="mt-1 responsive-text-gray">{formattedDate({ startDate, endDate })}</p>
 				<div className="sm:row-span-1 mt-3">
 					<ThirdSubTitle>Links</ThirdSubTitle>
 					<ul className="flex flex-row flex-wrap gap-2 sm:flex-col">

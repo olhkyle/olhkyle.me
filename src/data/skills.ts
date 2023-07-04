@@ -4,7 +4,7 @@ const skills: SkillStack[] = [
 		description: 'Semantic Markup for web standards with HTML5, understanding 4 web accessibility principles of WCAG ',
 	},
 	{
-		skill: ['CSS', 'SASS(SCSS)', 'Styled-Components', 'Emotion', 'TailwindCSS'],
+		skill: ['CSS(Sass)', 'Styled-Components', 'Emotion', 'TailwindCSS'],
 		description: 'Implement Responsive Design and decent UI components',
 	},
 	{
@@ -13,7 +13,7 @@ const skills: SkillStack[] = [
 	},
 	{ skill: ['TypeScript'], description: 'Predictive error handling with type checking using TypeScript' },
 	{ skill: ['React'], description: 'Developing SPA(Single Page Application)' },
-	{ skill: ['Recoil', 'Redux Toolkit'], description: 'Global State management with Recoil' },
+	{ skill: ['Recoil', 'Redux Toolkit'], description: 'Global State management' },
 	{ skill: ['React Query'], description: 'Server State management with React Query' },
 	{
 		skill: ['Node.js', 'Express.js'],

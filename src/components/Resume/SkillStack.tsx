@@ -16,7 +16,7 @@ const SkillStack = ({ _skill: { skill, description } }: SkillStackProps) => {
 					</HighlightText>
 				))}
 			</div>
-			<p className="ml-1 responsive-text-gray">- {description}</p>
+			<p className="mt-2 ml-1 responsive-text-gray">- {description}</p>
 		</li>
 	);
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import DoubleSubTitle from './titles/DoubleSubTitle';
-import { GITHUB, LINKEDIN, VELOG } from '../../constants/url';
+import { BLOG, GITHUB, LINKEDIN } from '../../constants/url';
 
 const SLICE_INDEX_OF_STRING = 8;
 
@@ -20,8 +20,8 @@ const LinksCard = () => {
 					</a>
 				</li>
 				<li className="underline underline-offset-4 decoration-blue-200 hover:text-blue-200 cursor-pointer">
-					<a href={VELOG} target="_blank">
-						{VELOG.slice(SLICE_INDEX_OF_STRING)}
+					<a href={BLOG} target="_blank">
+						{BLOG.slice(SLICE_INDEX_OF_STRING)}
 					</a>
 				</li>
 			</ul>

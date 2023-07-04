@@ -1,9 +1,17 @@
 import React from 'react';
-import Recoil from 'recoil';
-import { Divider, LanguageSelect } from '../components';
-import currentLangState from '../recoil/atom/currentLang';
-import { ContactCard, LinksCard, Project, SubTitle, Overview, SkillStack, Education, Etc } from '../components/Resume';
-import { education, etc, skills, projects } from '../data';
+import { Divider } from '../components';
+import {
+	ContactCard,
+	LinksCard,
+	Project,
+	SubTitle,
+	Overview,
+	SkillStack,
+	Education,
+	Etc,
+	DevExperience,
+} from '../components/Resume';
+import { education, etc, skills, projects, devExperience } from '../data';
 
 const Resume = () => {
 	return (
@@ -18,7 +26,7 @@ const Resume = () => {
 				<div className="mt-[6rem] sm:mt-[8rem]">
 					<SubTitle>Projects</SubTitle>
 					<ul>
-						{projects.map(project => (
+						{projects.sort().map(project => (
 							<React.Fragment key={project.title}>
 								<Project project={project} />
 								<Divider />
@@ -31,6 +39,14 @@ const Resume = () => {
 					<ul className="flex flex-col gap-6 mt-[2.5rem]">
 						{skills.map(skill => (
 							<SkillStack key={skill.description} _skill={skill} />
+						))}
+					</ul>
+				</div>
+				<div className="mt-[6rem]">
+					<SubTitle>Dev Experience</SubTitle>
+					<ul className="flex flex-col gap-10 mt-[2.5rem]">
+						{devExperience.map(experience => (
+							<DevExperience key={experience.title} experience={experience} />
 						))}
 					</ul>
 				</div>
