@@ -59,7 +59,7 @@ const projects: Project[] = [
 		overview: 'Community Web Application related to Computer / IT and Game topics',
 		myTasks: [
 			`Implemented declarative components for building Concurrent UI Patterns using React Query and Suspense.`,
-			'Developed AutoComplete UI Component based on keyword search for titles of selected topics and questions in the Select component',
+			'Developed AutoComplete UI Component based on keyword search for titles of questions and selected topics in the Select component',
 			'Implemented Infinite Scroll to fetch a page unit list of topic-related questions',
 			'Deployed Frontend with Firebase and Github Actions',
 			'Created UI guidelines for colors, font styles, component styling, and layout',
