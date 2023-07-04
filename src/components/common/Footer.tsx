@@ -1,6 +1,6 @@
 import React from 'react';
 import SocialBadge from './SocialBadge';
-import { BLOG, GITHUB, LINKEDIN, VELOG } from '../../constants/url';
+import { BLOG, GITHUB, LINKEDIN } from '../../constants/url';
 import { AiOutlineGithub, AiOutlineLink } from 'react-icons/ai';
 import { FiLinkedin } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
