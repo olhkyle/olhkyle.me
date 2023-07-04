@@ -61,7 +61,6 @@ const projects: Project[] = [
 			`Implemented declarative components for building Concurrent UI Patterns using React Query and Suspense.`,
 			'Developed AutoComplete UI Component based on keyword search for titles of selected topics and questions in the Select component',
 			'Implemented Infinite Scroll to fetch a page unit list of topic-related questions',
-			'Implemented custom styling of Mantine Core components with Emotion',
 			'Deployed Frontend with Firebase and Github Actions',
 			'Created UI guidelines for colors, font styles, component styling, and layout',
 		],
