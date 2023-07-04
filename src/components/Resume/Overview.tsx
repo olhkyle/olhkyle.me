@@ -8,8 +8,8 @@ const Overview = () => {
 				<p className="mt-1 ml-1 text-lg md:text-xl break-keep">FrontEnd Developer with background of Architecture</p>
 				<ul className="mt-10 ml-6 text-base responsive-text-gray list-disc break-keep">
 					<li>Striving for steady growth</li>
-					<li>Focusing on the details of UI/UX</li>
-					<li>Keeping the basic, no matter what project or work I participate in.</li>
+					<li>Believing in the joy of immersing oneself in something</li>
+					<li>Seeking ways constantly to enhance UI/UX in products, from an engineering perspective</li>
 				</ul>
 			</div>
 			<div className="hidden justify-center items-center mr-2 w-64 border-[1px] border-dark object-cover overflow-hidden rounded-full sm:flex">
