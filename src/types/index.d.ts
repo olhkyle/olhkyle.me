@@ -13,7 +13,8 @@ declare type Project = {
 		icon: React.ReactNode;
 	}>;
 	callout: string;
-	overview: string;
+	overviewEN: string;
+	overviewKR: string;
 	myTasks: string[];
 	improvement: string[];
 	techStacks: string[];

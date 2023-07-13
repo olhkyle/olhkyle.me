@@ -31,7 +31,8 @@ const projects: Project[] = [
 			},
 		],
 		callout: '',
-		overview: 'Trello Clone project using Vanilla JavaScript only',
+		overviewEN: 'Trello Clone project using Vanilla JavaScript only',
+		overviewKR: '바닐라 자바스크립트로만 구현한 Trello',
 		myTasks: [
 			'Implemented SPA (Single Page Application) using Vanilla JavaScript without any libraries or frameworks',
 			`Created a diffing algorithm similar to React's Reconciliation`,
@@ -62,7 +63,8 @@ const projects: Project[] = [
 			},
 		],
 		callout: `If you want to try to use Deployed Service, you have to register because of Firebase's security rule.`,
-		overview: 'Community Web Application related to Computer / IT and Game topics',
+		overviewEN: 'Community Web Application related to Computer / IT and Game topics',
+		overviewKR: '컴퓨터 / IT, 게임 주제 관련 커뮤니티 서비스',
 		myTasks: [
 			`Implemented declarative components for building Concurrent UI Patterns using React Query and Suspense.`,
 			'Developed AutoComplete UI Component based on keyword search for titles of questions and selected topics in the Select component',
@@ -111,7 +113,8 @@ const projects: Project[] = [
 			},
 		],
 		callout: '',
-		overview: 'Web Application of location-based gym search, booking, and goods rental',
+		overviewEN: 'Web Application of location-based gym search, booking, and goods rental',
+		overviewKR: '위치 기반 체육관 검색, 예약 및 스포츠 용품 대여 서비스',
 		myTasks: [
 			`Developed User Authentication-related features and UI, such as Login, Signup, Forgot-Password, and Member Detail pages`,
 			`Implemented Social Login with JWT and OAuth 2.0`,

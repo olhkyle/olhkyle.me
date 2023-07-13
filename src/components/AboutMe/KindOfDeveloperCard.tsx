@@ -15,16 +15,20 @@ const kindOfDeveloper: Record<Lang, { title: string; content: string[] }[]> = {
 			],
 		},
 		{
-			title: '꾸준한 학습을 지향하는 개발자',
+			title: '뛰어난 UI / UX를 구현하는 개발자',
 			content: [
-				`저는 꾸준한 학습을 지향합니다. 개발 교육 프로그램에서 하루 12시간 동안 모던 자바스크립트 딥다이브 책 1회독, 바닐라 자바스크립트와 리액트로 페어 프로그래밍을 통해 협업 경험을 하였으며, 2번의 팀 프로젝트를 경험하여 개발 역량을 쌓아왔습니다.`,
-				`제한된 시간과 공간에서의 강제적인 공부 뿐만 아니라, 자발적으로 매일 알고리즘 2문제, 책을 활용한 바닐라 자바스크립트 공부, 리액트를 활용한 개인 프로젝트, 그리고 책과 공식 문서를 활용하여 타입스크립트 공부를 꾸준히 하고 있습니다.`,
+				`개발자가 되기 이전에 건축, 인테리어 분야에서 오랜 기간 공부와 일을 하며 시각적으로 뛰어난 것을 구현하는 능력을 길러 왔습니다. 기능적이면서 시각적으로도 뛰어난 공간을 구현해야 하는 분야를 경험하면서, 시각적인 구성과 기능에 대한 중요성을 누구보다 잘 알고 있습니다.`,
+				`하드웨어 만이 아닌 소프트웨어에도 훌륭한 구성과 기능을 구현하는 것에 관심이 많아졌고, 자연스럽게 프론트엔드 개발에 빠져들게 되어, 이전의 경험을 바탕으로 유려한 UI / UX에 집중하며 몰입하여 프로젝트를 완성한 경험이 있습니다.`,
+				`예를 들어, 팀 프로젝트 FineApple은 첫 기획 단계에서 Apple 커뮤니티 기능의 UI / UX 면에서 부족함을 느껴, 보완하는 클론 프로젝트로 기획하고 진행하였습니다. 하지만, 클론에 그치지 않고 팀원들이 생각하는 좋은 UI / UX를 반영한 커뮤니티 프로젝트로 만들고자, 계획된 기간보다 연장 후, 기획의 방향을 변경하여 개발 그리고 배포까지 진행한 경험이 있습니다.`,
 			],
 		},
 		{
-			title: '사용자 경험을 중시하는 개발자',
+			title: '꾸준한 학습 능력을 지닌 개발자',
 			content: [
-				'견고하게 설계된 사용자 경험(UX)과 인터페이스(UI)는 제품을 사용하는 사용자들에게 긍정적인 인상을 주곤 합니다. 프론트엔드 개발자로서 사용자 경험은 1순위로 여겨야 한다고 생각합니다. 간단한 UI 컴포넌트 하나라도 이용할 사용자 입장에서 한 번 더 생각하고, 불편함을 느끼지 않도록 개선하려고 노력합니다.',
+				'자바스크립트에 대한 이해도를 높이기 위해 모던 자바스크립트 딥다이브를 활용해 기본기를 쌓아 왔습니다. 쌓아온 기본기를 바탕으로 협업 경험과 동시에, 개발 역량을 늘리기 위해 팀 프로젝트와 개인 프로젝트를 진행하였습니다.',
+				`스스로 공부한 기술에 대해 notion과 개인 블로그를 활용하여 기록하고, 프로젝트를 진행하면서 회고를 작성하는 습관을 통해 스스로를 돌아보며 부족한 부분을 채워나가며 꾸준히 공부하고 있습니다.
+				`,
+				`많은 여행과 교환학생 경험 덕에 영어로 글을 작성하고, 읽고, 말하는 것에 익숙합니다. 영문으로 작성된 많은 개발 문서를 활용하여 새로운 기술을 익히고, 프로젝트에 적극적으로 활용하며 학습하고 있습니다.`,
 			],
 		},
 	],
@@ -37,16 +41,20 @@ const kindOfDeveloper: Record<Lang, { title: string; content: string[] }[]> = {
 			],
 		},
 		{
-			title: 'A developer who learned constantly',
+			title: 'A developer who implement great UI/UX',
 			content: [
-				`I'm a constant learner. In a development education program, I dedicated 12 hours a day to reading the book "Modern JavaScript Deep Dive" and gained collaborative experience through pair programming with vanilla JavaScript and React. I have also accumulated my development skills through two team projects and personal projects.`,
-				`In addition to forced studying within limited time and space, I voluntarily engage in daily practice, such as solving two algorithm problems, studying vanilla JavaScript using books, working on personal projects with React, and continuously studying TypeScript using books and official documentation.`,
+				`Before becoming a developer, I spent a long time studying and working in the fields of architecture and interior design, honing my ability to implement visually stunning creations. Through my experience in a field that requires both functionality and visual appeal, I have gained a deep understanding of the importance of visual composition and functionality.`,
+				`I have developed a keen interest in implementing excellent design and functionality not only in hardware but also in software. This naturally led me to delve into FrontEnd Development, where I could leverage my previous experiences to focus on creating great UI/UX and immerse myself in projects.`,
+				`For example, in a team project called FineApple, I recognized the lack of UI/UX quality in the initial planning phase of an Apple community feature. To address this, we planned and carried out a clone project aimed at improving the UI/UX. However, we didn't stop at cloning; instead, we extended the project timeline, changed the direction of the planning, and proceeded with development and deployment, incorporating the team's ideas for a better UI/UX community project.
+				`,
 			],
 		},
 		{
-			title: 'A developer who values user experience',
+			title: 'A developer with consistent learning ability.',
 			content: [
-				`A solidly designed UI and UX often leaves a positive impression on the people who use your product. As a FrontEnd developer, I believe that UX should be a priority, and even with a simple UI component, I try to put myself in the shoes of the user who will be using it and improve it so that they don't feel frustrated.`,
+				`To enhance my understanding of JavaScript, I have utilized resources like "Modern JavaScript Deep Dive" to build a strong foundation. Building upon this foundation, I have engaged in team projects and personal projects to not only gain collaboration experience but also to expand my development skills.`,
+				`I have a habit of documenting the technologies I have self-studied using platforms like Notion and maintaining a personal blog. Through this practice, as well as writing reflections during project work, I continuously reflect on myself and fill in any knowledge gaps, consistently striving to learn and improve.`,
+				`Thanks to my extensive travel and experience as an exchange student, I am comfortable writing, reading, and speaking in English. I frequently utilize English-written development documentation to learn new technologies actively and apply them in projects as part of my learning process.`,
 			],
 		},
 	],
