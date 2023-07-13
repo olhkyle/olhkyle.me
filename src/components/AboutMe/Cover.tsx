@@ -1,7 +1,7 @@
 import { HighlightText } from '../common';
 
 interface CoverProps {
-	currentLang: Lang | string;
+	currentLang: Lang;
 }
 
 const Cover = ({ currentLang }: CoverProps) => {
