@@ -18,12 +18,12 @@ const ProjectContent = () => {
 					<LanguageSelect currentLang={currentLang} setCurrentLang={setCurrentLang} />
 					<button
 						type="button"
-						className="inline-flex justify-center items-center mr-3 w-8 h-8 rounded-full border-[1px] border-black dark:border-white"
+						className="inline-flex justify-center items-center mr-3 w-8 h-8 rounded-full border-[1px] border-black dark:border-white sm:hidden"
 						onClick={goBack}>
 						<FiArrowLeft size="24" />
 					</button>
 				</div>
-				<MainTitle>{title}</MainTitle>
+				<MainTitle>{title!.replace(/-/g, ' ')}</MainTitle>
 			</div>
 			<Outlet />
 		</>
