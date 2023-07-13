@@ -15,7 +15,7 @@ const Project = ({
 		composition,
 		links,
 		callout,
-		overview,
+		overviewEN,
 		myTasks,
 		improvement,
 		techStacks,
@@ -55,7 +55,7 @@ const Project = ({
 
 			<div className="row-span-1 sm:col-span-2 sm:h-[300px]">
 				<DoubleSubTitle>Overview</DoubleSubTitle>
-				<p>{overview}</p>
+				<p>{overviewEN}</p>
 			</div>
 
 			<div className="row-span-1 sm:col-span-2">
