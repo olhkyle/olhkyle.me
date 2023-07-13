@@ -6,6 +6,7 @@ import {
 	FINEAPPLE_DEPLOY,
 	FINEAPPLE_GITHUB,
 	FINEAPPLE_RETROSPECT,
+	TRELLO_DEPLOY,
 	TRELLO_GITHUB,
 } from '../constants/url';
 
@@ -22,6 +23,11 @@ const projects: Project[] = [
 				title: 'Github',
 				href: TRELLO_GITHUB,
 				icon: <AiOutlineGithub size="22" />,
+			},
+			{
+				title: 'Deployed Link',
+				href: TRELLO_DEPLOY,
+				icon: <AiOutlineLink size="22" />,
 			},
 		],
 		callout: '',
