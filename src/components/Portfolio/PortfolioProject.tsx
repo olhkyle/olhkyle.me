@@ -3,7 +3,13 @@ import { Link } from 'react-router-dom';
 import { HighlightText } from '../common';
 import manageColorScheme from '../../utils/manageColorScheme';
 
-const PortfolioProject = ({ project: { title, techStacks, overview } }: { project: Project }) => {
+const PortfolioProject = ({
+	project: { title, techStacks, overviewEN, overviewKR },
+	currentLang,
+}: {
+	project: Project;
+	currentLang: Lang;
+}) => {
 	return (
 		<div className="col-span-4 mb-12">
 			<Link to={`/project/${title.replace(/\s/g, '-')}`}>
@@ -19,7 +25,7 @@ const PortfolioProject = ({ project: { title, techStacks, overview } }: { projec
 						))}
 					</ul>
 					<h2 className="text-2xl font-semibold sm:text-3xl">{title}</h2>
-					<p>{overview}</p>
+					<p>{currentLang === 'ENG' ? overviewEN : overviewKR}</p>
 				</div>
 			</Link>
 		</div>
